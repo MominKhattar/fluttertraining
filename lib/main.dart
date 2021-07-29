@@ -38,11 +38,12 @@ class MyApp extends StatelessWidget {
       ),
 
 
-      initialRoute: '/login',
+      initialRoute: MyRoutes.homeRoute,
       routes:{
         MyRoutes.homeRoute : (context)=> HomePage(),
         MyRoutes.loginRoute : (context)=>LoginPage(),
       }
+
 
     );
   }
