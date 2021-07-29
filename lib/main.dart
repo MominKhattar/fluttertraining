@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertraining/pages/login.dart';
 import 'pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'utils/routes.dart';
 
 
 void main() {
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      debugShowCheckedModeBanner: false,
 
       //for changing theme
 
@@ -37,8 +40,8 @@ class MyApp extends StatelessWidget {
 
       initialRoute: '/login',
       routes:{
-        '/' : (context)=> HomePage(),
-        '/login' : (context)=>LoginPage(),
+        MyRoutes.homeRoute : (context)=> HomePage(),
+        MyRoutes.loginRoute : (context)=>LoginPage(),
       }
 
     );
