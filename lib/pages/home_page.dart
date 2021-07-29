@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('Hello world Welcome to Flutter'),
+          child: Text('Hello world Welcome to Flutter app'),
         ),
       ),
     );
